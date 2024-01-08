@@ -31,7 +31,7 @@ import { checkPhoneNumberInMessage } from "../services/message.service.js";
 import { checkToken } from "../utils/checkToken.js";
 import { FReadMessage } from '../functions/fApi/conversation.js'
 import { FGetListConversationIdStrange } from '../functions/fApi/conversation.js'
-const socket = io.connect('http://43.239.223.142:3000', {
+const socket = io.connect('http://127.0.0.1:4000', {
   secure: true,
   enabledTransports: ["wss"],
   transports: ['websocket', 'polling'],
